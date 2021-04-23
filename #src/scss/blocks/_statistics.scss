@@ -1,0 +1,24 @@
+.statistics {
+    padding-top: 100px;
+    &__wrapper {
+        .title {
+            text-align: center;
+            width: auto;
+            font-size: 43px;
+            line-height: 130%;
+        }
+        .section__text {
+            padding-top: 30px;
+            width: auto;
+            font-size: 18px;
+            text-align: center;
+        }
+        .statistics__inner {
+            padding-top: 70px;
+            .statistics__inner-bars {
+                text-align: end;
+            }
+        }
+        
+    }
+}

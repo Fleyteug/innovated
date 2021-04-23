@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #FFF5F5;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.container {
+  width: 1224px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #050C26;
+  font-family: Lato;
+  font-size: 69px;
+  line-height: 120%;
+  width: 550px;
+}
+
+.title span {
+  color: #3988FF;
+}
+
+.section__text {
+  width: 530px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  color: #575859;
+}
+
+.section__text_first {
+  color: #050C26;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+.section__text_second {
+  color: #575859;
+}
+
+.section__text_main {
+  font-size: 47px;
+  color: #575859;
+  text-align: left;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+  padding-top: 20px;
+}
+
+.header .menu__body {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 100px 30px 30px 30px;
+  transition: all 0.1s ease 0s;
+}
+
+.header .menu__body._active {
+  left: 0;
+  z-index: 8;
+}
+
+.header .menu__list {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header .menu__list li {
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.header .menu__list li .menu__link {
+  position: relative;
+  text-decoration: none;
+  color: #575859;
+  font-size: 35px;
+}
+
+.header .menu__list li .menu__link:before {
+  content: '';
+  position: absolute;
+  left: -35px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #3988FF;
+  border-radius: 100%;
+}
+
+.header .menu__list li .menu__link:hover:before {
+  background-color: #36A6A2;
+  transition: all 0.6s;
+}
+
+.header .menu__icon {
+  z-index: 9;
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.header .menu__icon span,
+.header .menu__icon::before,
+.header .menu__icon::after {
+  left: 0;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  background-color: #3988FF;
+}
+
+.header .menu__icon::before,
+.header .menu__icon::after {
+  content: "";
+}
+
+.header .menu__icon::before {
+  top: 0;
+}
+
+.header .menu__icon::after {
+  bottom: 0;
+}
+
+.header .menu__icon span {
+  top: 50%;
+  transform: scale(1) translate(0px, -50%);
+}
+
+.header .menu__icon._active span {
+  transform: scale(0) translate(0px, -50%);
+}
+
+.header .menu__icon._active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0px, -50%);
+}
+
+.header .menu__icon._active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0px, 50%);
+}
+
+.header .menu__desk {
+  margin: 0 auto;
+}
+
+.header .menu__list-desk {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.header .menu__list-desk li {
+  padding-right: 50px;
+}
+
+.header .menu__list-desk .menu__link-desk {
+  color: #575859;
+  transition: 0.5s;
+}
+
+.header .menu__list-desk .menu__link-desk:hover {
+  color: #3988FF;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.header .header__logo {
+  color: #050C26;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+.promo {
+  padding-top: 100px;
+  height: 100%;
+  z-index: 5;
+  background: url("../img/promo_man.png") no-repeat 100%/cover;
+  background-size: 740px;
+  padding-bottom: 100px;
+}
+
+.promo .promo__wrapper {
+  padding: 50px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo .section__text {
+  padding-top: 25px;
+}
+
+.promo .btns__block {
+  margin-top: 35px;
+  width: 210px;
+  display: block;
+  cursor: pointer;
+}
+
+.promo .btns__block .video__btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo .btns__block .video__btn .video__btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  background-color: #FAE1E7;
+  border-radius: 100%;
+}
+
+.promo .btns__block .video__btn .video__btn-text {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #050C26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__main {
+  width: 220px;
+  height: 45px;
+  background-color: #3988FF;
+  border-radius: 10px;
+  border-width: 0;
+  transition: all 1s;
+}
+
+.btn__main a {
+  color: #ffff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.btn__main:hover {
+  background-color: #36A6A2;
+  transition: all 1s;
+}
+
+.btn__main:hover a {
+  color: #575859;
+  transition: all 1s;
+}
+
+.btn__nav {
+  width: 134px;
+  height: 50px;
+  background-color: #3988FF;
+  border-radius: 7px;
+  border-width: 0;
+  transition: all 1s;
+}
+
+.btn__nav a {
+  color: #ffff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.btn__nav:hover {
+  background-color: #36A6A2;
+  transition: all 1s;
+}
+
+.btn__nav:hover a {
+  color: #ffff;
+  transition: all 1s;
+}
+
+.statistics {
+  padding-top: 100px;
+}
+
+.statistics__wrapper .title {
+  text-align: center;
+  width: auto;
+  font-size: 43px;
+  line-height: 130%;
+}
+
+.statistics__wrapper .section__text {
+  padding-top: 30px;
+  width: auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.statistics__wrapper .statistics__inner {
+  padding-top: 70px;
+}
+
+.statistics__wrapper .statistics__inner .statistics__inner-bars {
+  text-align: end;
+}
+
+@media (min-width: 767px) {
+  .menu__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__list li {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .menu__icon {
+    display: block;
+  }
+
+  .btn__nav {
+    display: none;
+  }
+}

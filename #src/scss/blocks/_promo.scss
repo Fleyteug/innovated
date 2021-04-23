@@ -1,0 +1,45 @@
+.promo {
+    padding-top: 100px;
+    height: 100%;
+    z-index: 5;
+    background: url('../img/promo_man.png') no-repeat 100%/cover;
+    background-size: 740px;
+    padding-bottom: 100px;
+    .promo__wrapper {
+        padding: 50px 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section__text {
+        padding-top: 25px;
+    }
+    .btns__block {
+        margin-top: 35px;
+        width: 210px;
+        display: block;
+        cursor: pointer;
+        .video__btn {
+            display: flex;
+            justify-content: space-between;
+            .video__btn-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 70px;
+                width: 70px;
+                background-color: #FAE1E7;
+                border-radius: 100%;
+            }
+            .video__btn-text {
+                font-family: Poppins;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 160%;
+                color: $text-color-1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

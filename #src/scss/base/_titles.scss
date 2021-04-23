@@ -1,0 +1,36 @@
+.title {
+    color: $title-color;
+    font-family: Lato;
+    font-size: 69px;
+    line-height: 120%;
+    width: 550px;
+    span {
+        color: $btn-color-1;
+    }
+}
+
+.section__text {
+    width: 530px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    color: $text-color-2
+}
+
+.section__text_first {
+    color: $text-color-1;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+.section__text_second {
+    color: $text-color-2;
+}
+
+.section__text_main {
+    font-size: 47px;
+    color: $text-color-2;
+    text-align: left;
+}

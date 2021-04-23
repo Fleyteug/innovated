@@ -1,0 +1,51 @@
+.btn__main {
+    width: 220px;
+    height: 45px;
+    background-color: $btn-color-1;
+    border-radius: 10px;
+    border-width: 0;
+    transition: all 1s;
+    a {
+        color: #ffff;
+        font-size: 18px;
+        text-decoration: none;
+        transition: all 1s;
+    }
+    &:hover {
+        background-color: $btn-color-2;
+        transition: all 1s;
+        a {
+            color: $text-color-2;
+            transition: all 1s;
+        }
+    }
+}
+
+.btn__nav {
+    width: 134px;
+    height: 50px;
+    background-color: $btn-color-1;
+    border-radius: 7px;
+    border-width: 0;
+    transition: all 1s;
+    a {
+        color: #ffff;
+        font-size: 18px;
+        text-decoration: none;
+        transition: all 1s;
+    }
+    &:hover {
+        background-color: $btn-color-2;
+        transition: all 1s;
+        a {
+            color: #ffff;
+            transition: all 1s;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .btn__nav {
+        display: none;
+    }
+}
