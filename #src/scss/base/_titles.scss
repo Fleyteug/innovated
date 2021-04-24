@@ -7,6 +7,17 @@
     span {
         color: $btn-color-1;
     }
+    @media (max-width: 991px) {
+        line-height: 110%;
+    }
+    @media (max-width: 767px) {
+        width: 410px;
+        font-size: 40px;
+    }
+    @media (max-width: 575px) {
+        width: 290px;
+        text-align: center;
+    }
 }
 
 .section__text {
@@ -16,7 +27,14 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 160%;
-    color: $text-color-2
+    color: $text-color-2;
+    @media (max-width: 767px) {
+        width: 410px;
+    }
+    @media (max-width: 575px) {
+        width: 290px;
+        text-align: center;
+    }
 }
 
 .section__text_first {

@@ -16,6 +16,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
+    //progressBar
+
+    const counters = document.querySelectorAll('.statistics__counter'),
+    lines = document.querySelectorAll('.statistics__line span');
+
+    counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
+
+
 
 
 

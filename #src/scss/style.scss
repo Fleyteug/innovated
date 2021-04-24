@@ -18,6 +18,12 @@ body._lock {
 .container {
     width: 1224px;
     margin: 0 auto;
+    @media (max-width: 767px) {
+        width: 700px;
+    }
+    @media (max-width: 575px) {
+        width: 100%;
+    }
 }
 
 @import 'base/variables';
